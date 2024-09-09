@@ -9,11 +9,34 @@ function calculateMoney(ticketSale) {
         const subtotal = 'invalid number';
         return subtotal;
     }
-    else{
+    else {
         return cashin;
     }
 }
 const output = calculateMoney(100);
 console.log(output);
 
-Problem-02
+// Problem-02
+function checkName(input) {
+    if (typeof input !== 'string') {
+        const ride = 'Invalid'
+        return ride;
+    }
+    const name = input.toLowerCase();
+    let bangoName = ['a', 'y', 'i', 'e', 'o', 'u', 'w'];
+    for (const char of bangoName) {
+        if (name.endsWith(char)) {
+            const goodName = 'Bad Name';
+            return goodName;
+        }
+        else {
+            const badName = 'Good Name';
+            return badName;
+        }
+    }
+
+}
+const prob2Output = checkName(true);
+console.log(prob2Output);
+
+// another solution
